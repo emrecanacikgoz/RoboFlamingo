@@ -10,40 +10,40 @@ from open_flamingo.src.factory import _infer_decoder_layers_attr_name
 
 mpt_dict = {
     "mpt_3b": {
-        "lang_encoder_path": "path_to/mpt-1b-redpajama-200b", 
-        "tokenizer_path": "path_to/mpt-1b-redpajama-200b", 
+        "lang_encoder_path": "anas-awadalla/mpt-1b-redpajama-200b", 
+        "tokenizer_path": "anas-awadalla/mpt-1b-redpajama-200b", 
         "cross_attn_every_n_layers": 1,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-3B-vitl-mpt1b/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-3B-vitl-mpt1b/checkpoint.pt"
     }, 
     "mpt_dolly_3b": {
-        "lang_encoder_path": "path_to/mpt-1b-redpajama-200b-dolly", 
-        "tokenizer_path": "path_to/mpt-1b-redpajama-200b-dolly", 
+        "lang_encoder_path": "anas-awadalla/mpt-1b-redpajama-200b-dolly", 
+        "tokenizer_path": "anas-awadalla/mpt-1b-redpajama-200b-dolly", 
         "cross_attn_every_n_layers": 1,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-3B-vitl-mpt1b-langinstruct/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-3B-vitl-mpt1b-langinstruct/checkpoint.pt"
     },
     "mpt_4b": {
-        "lang_encoder_path": "path_to/RedPajama-INCITE-Instruct-3B-v1", 
-        "tokenizer_path": "path_to/RedPajama-INCITE-Instruct-3B-v1", 
+        "lang_encoder_path": "togethercomputer/RedPajama-INCITE-Instruct-3B-v1", 
+        "tokenizer_path": "togethercomputer/RedPajama-INCITE-Instruct-3B-v1", 
         "cross_attn_every_n_layers": 2,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-4B-vitl-rpj3b-langinstruct/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-4B-vitl-rpj3b-langinstruct/checkpoint.pt"
     },
     "mpt_base_4b": {
-        "lang_encoder_path": "path_to/RedPajama-INCITE-Base-3B-v1", 
-        "tokenizer_path": "path_to/RedPajama-INCITE-Base-3B-v1", 
+        "lang_encoder_path": "togethercomputer/RedPajama-INCITE-Base-3B-v1", 
+        "tokenizer_path": "togethercomputer/RedPajama-INCITE-Base-3B-v1", 
         "cross_attn_every_n_layers": 2,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-4B-vitl-rpj3b/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-4B-vitl-rpj3b/checkpoint.pt"
     },
     "mpt_9b": {
-        "lang_encoder_path": "path_to/mpt-7b", 
-        "tokenizer_path": "path_to/mpt-7b", 
+        "lang_encoder_path": "mosaicml/mpt-7b", 
+        "tokenizer_path": "mosaicml/mpt-7b", 
         "cross_attn_every_n_layers": 4,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-9B-vitl-mpt7b/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-9B-vitl-mpt7b/checkpoint.pt"
     },
     "llama_9b": {
         "lang_encoder_path": "path_to/llama-7b-hf-jxu124", 
         "tokenizer_path": "path_to/llama-7b-hf-jxu124", 
         "cross_attn_every_n_layers": 4,
-        "openflamingo_checkpoint": "path_to/OpenFlamingo-9B/checkpoint.pt"
+        "openflamingo_checkpoint": "openflamingo/OpenFlamingo-9B/checkpoint.pt"
     }
 }
 
