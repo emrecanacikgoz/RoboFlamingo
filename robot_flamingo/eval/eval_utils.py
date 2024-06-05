@@ -38,8 +38,7 @@ from calvin_env.envs.play_table_env import get_env
 from robot_flamingo.data.data import preprocess_image, preprocess_text_calvin
 from robot_flamingo.utils import world_to_tcp_frame, tcp_to_world_frame
 import functools
-os.environ['PYOPENGL_PLATFORM'] = 'osmesa'
-import pyrender
+os.environ['PYOPENGL_PLATFORM'] = 'egl'
 logger = logging.getLogger(__name__)
 
 EP_LEN = 360

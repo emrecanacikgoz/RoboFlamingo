@@ -7,8 +7,8 @@ import random
 from robot_flamingo.eval.eval_utils import eval_one_epoch_calvin_ddp
 from torch.distributed.elastic.multiprocessing.errors import record
 
-# os.environ['PYOPENGL_PLATFORM'] = 'egl'
-os.environ['PYOPENGL_PLATFORM'] = 'osmesa'
+os.environ['PYOPENGL_PLATFORM'] = 'egl'
+#os.environ['PYOPENGL_PLATFORM'] = 'osmesa'
 import numpy as np
 import torch
 import wandb

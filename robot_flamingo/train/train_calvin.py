@@ -26,7 +26,6 @@ from transformers import (
 
 from robot_flamingo.models.factory import create_model_and_transforms, mpt_dict
 
-
 def random_seed(seed=42, rank=0):
     torch.manual_seed(seed + rank)
     np.random.seed(seed + rank)
@@ -388,7 +387,7 @@ def main():
     else:
         calvin_dataset = get_data(args, image_processor, tokenizer, "calvin")
     
-    if args.co_train:
+    if args.cotrain:
         coco_loader = get_data(args, image_processor, tokenizer, "coco")
         vqa_loader = get_data(args, image_processor, tokenizer, "vqa")
         coco_cycle_loader = itertools.cycle(coco_loader)
@@ -545,7 +544,7 @@ def main():
                 device_id=device_id,
                 wandb=wandb,
             )
-        elif args.co_train:
+        elif args.cotrain:
             train_one_epoch_calvin_cotrain(
                 args=args,
                 model=ddp_model,
